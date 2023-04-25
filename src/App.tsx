@@ -42,7 +42,7 @@ function AddingButton({year}: Year) {
   const [agreement, setAgreement] = useState(false);
   const addService = (e: any) => {
     e.preventDefault();
-    setAgreement(true);
+    setAgreement(!agreement);
   };
   console.log(year, agreement)
   return (
